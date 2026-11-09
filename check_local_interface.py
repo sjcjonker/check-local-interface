@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# Monitor Linux interface state and counter rates with Nagios perfdata.
+# Author: Stijn Jonker (sjcjonker) | https://github.com/sjcjonker
+# Usage: python3 check_local_interface.py eth0
+# Default warning/critical: 10/20 error or discard events per minute. Help: --help.
+# Nagios exit codes: 0 OK, 1 WARNING, 2 CRITICAL, 3 UNKNOWN.
 """Local Linux interface Nagios check with SNMP-compatible counter perfdata."""
 import argparse
 import fcntl
